@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Position</title>
+
+    <style>
+        .container {
+            border: 2px solid #000000;
+            width: 100%;
+            display: flex;
+            height: 400px;
+            gap: 20px;
+            position: relative;
+        }
+
+        .box{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 2px solid green;
+        }
+
+        .box1{
+            background-color: lightblue;
+        }
+
+        .box2{
+            background-color: lightcoral;
+            top: 200px;
+        }
+        .box3{
+            background-color: lightcyan;
+            z-index: 2;
+            left: 300px;
+        }
+        .box4{
+            background-color: #fff;
+            top: 200px;
+            left: 400px;
+        }
+        .box5{
+            background-color: #000000;
+            z-index: 1;
+        }
+
+        .box6{
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+    </div>
+
+
+</body>
+
+</html>
