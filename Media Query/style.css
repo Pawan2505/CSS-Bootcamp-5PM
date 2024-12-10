@@ -1,0 +1,80 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box{
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.box1{
+    background-color: lightcoral;
+}
+.box2{
+background-color: lightyellow;
+}
+.box3{
+background-color: lightpink;
+}
+
+
+/* Media Query Syntax */
+
+
+/* Extra Small */
+
+@media  (max-width:575px){
+    .container{
+        flex-direction: column;
+        padding: 100px 0px;
+    }
+
+    .box{
+        width: 50%;
+    }
+
+    .box2{
+        background-color: green;
+    }
+}
+
+/* Small */
+
+
+@media (min-width: 576px) and (max-width: 768px){
+    
+}
+
+
+/* Medium */
+@media (min-width: 769px) and (max-width: 992px){
+
+}
+
+/* Large */
+@media (min-width: 993px) and (max-width: 1200px){
+
+}
+
+/* Extra Large */
+
+@media (min-width: 1201px){
+
+}
+
+
