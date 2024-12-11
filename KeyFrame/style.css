@@ -1,0 +1,35 @@
+
+.container{
+    width: 80%;
+    height: 400px;
+    border: 2px solid black;
+    margin: 100px;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+@keyframes mybox {
+    0%{
+        top: 0;
+        left: 0;
+      }
+      30% {
+        top: 50px;
+      }
+      68%,
+      72% {
+        left: 50px;
+      }
+      100% {
+        top: 100px;
+        left: 100%;
+      }
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid green;
+    background-color: lightcoral;
+    animation: mybox 4s ease infinite;
+}

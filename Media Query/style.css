@@ -38,7 +38,7 @@ background-color: lightpink;
 
 /* Extra Small */
 
-@media  (max-width:575px){
+@media  (max-width:768px){
     .container{
         flex-direction: column;
         padding: 100px 0px;
@@ -53,16 +53,27 @@ background-color: lightpink;
     }
 }
 
-/* Small */
 
-
-@media (min-width: 576px) and (max-width: 768px){
-    
-}
 
 
 /* Medium */
 @media (min-width: 769px) and (max-width: 992px){
+
+    .container{
+        flex-wrap: wrap;
+    }
+
+    .box1{
+       width: 350px;
+    }
+
+    .box2{
+      width: 350px;
+    }
+
+    .box3{
+       width: 700px; 
+    }
 
 }
 
@@ -71,10 +82,6 @@ background-color: lightpink;
 
 }
 
-/* Extra Large */
 
-@media (min-width: 1201px){
-
-}
 
 
