@@ -2,6 +2,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  
 }
 
 .navbar {
@@ -10,6 +11,8 @@
   background-color: #000;
   color: white;
   line-height: 50px;
+  position: sticky;
+  top: 0px;
   .logo {
     padding-left: 100px;
     font-size: 30px;
@@ -61,7 +64,7 @@
         font-size: 18px;
       }
 
-      button {
+      .btn {
         margin-top: 20px;
         padding: 10px 25px;
         border-radius: 5px;
@@ -126,7 +129,7 @@
         letter-spacing: 1px;
       }
 
-      button {
+      .btn {
         padding: 10px 20px;
         margin-top: 20px;
         text-align: center;
@@ -181,4 +184,73 @@
       }
     }
   }
+}
+
+
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+
+  .contact-heading{
+    font-size: 35px;
+    letter-spacing: 2px;
+    padding: 50px 0px;
+  }
+
+    .form-control{
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    #btn-contact:hover{
+      background-color: #CCCC;
+    }
+}
+
+.footer-container{
+  background-color: #000;
+  display: flex;
+  justify-content: space-evenly;
+  color: #CCC;
+  padding-bottom: 50px;
+}
+
+.company-headings{
+padding-top: 50px;
+letter-spacing: 2px;
+}
+
+.footer-list-items{
+  list-style: none;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+
+}
+
+.fa-brands{
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.heading-underline{
+  width: 70%;
+  height: 2px;
+  background-color: red;
+}
+
+.menu-lists{
+  padding-top: 40px;
+}
+
+.footer-copyright{
+  background-color: #000;
+  text-align: center;
+  color: #ccc;
+  /* padding-bottom: 40px; */
 }
