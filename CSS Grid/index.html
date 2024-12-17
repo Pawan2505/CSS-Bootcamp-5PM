@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+        .grid-container{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: repeat(4,1fr); */
+            /* grid-template-columns: 50% 50% ; */
+            /* grid-template-rows: 100px 200px; */
+            /* text-align: center; */
+            /* line-height: 100px; */
+            /* gap: 20px; */
+
+            grid-template-areas: 
+            'box1 box1 box3'
+            'box2 box2 box3'
+            'box4 box4 box3'
+            
+            ;
+            gap: 20px;
+        }
+
+        .box1{
+            grid-area: box1;
+            background-color: red;
+            padding: 50px;
+        }
+        .box2{
+            grid-area: box2;
+            background-color: green;
+            padding: 50px;
+        }
+        .box3{
+            grid-area: box3;
+            background-color: yellow;
+            padding: 50px;
+        }
+        .box4{
+            grid-area: box4;
+            background-color: pink;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-items box1">Box 1</div>
+        <div class="grid-items box2">Box 2</div>
+        <div class="grid-items box3">Box 3</div>
+        <div class="grid-items box4">Box 4</div>
+        <div class="grid-items box4">Box 4</div>
+    </div>
+</body>
+
+</html>
